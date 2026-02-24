@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mysite"
+version = "0.1.0"
+description = "Django project"
+authors = ["Your Name <your@email.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "4.2"
+django-debug-toolbar = "4.0.0"
+django-filter = "22.1"
+djangorestframework = "3.14.0"
+Pillow = "9.4.0"
+gunicorn = "^21.2.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.0"
+flake8 = "^6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry-core.metadata"

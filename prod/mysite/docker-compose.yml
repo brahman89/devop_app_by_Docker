@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_DEBUG=1
+      - DJANGO_SETTINGS_MODULE=mysite.settings
+    volumes:
+      - ./uploads:/app/uploads
+      - static_volume:/app/static
+    restart: always
+
+volumes:
+  static_volume:
