@@ -2,7 +2,7 @@
 name = "mysite"
 version = "0.1.0"
 description = "Django project"
-authors = ["Your Name <your@email.com>"]
+authors = ["brahman"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
